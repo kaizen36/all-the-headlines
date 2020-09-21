@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@5"></script>
+      <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+</head>
+
+<body>
+
+ <title>You read it here first.</title>
+ <h1>All the Headlines</h1>
+ <p>Read them here.</p>
+
+  <div id="vis"></div>
+  
+  <script>
+    const spec = "{{ url_for('static', filename='vega-spec.json') }}";
+  	vegaEmbed("#vis", spec)
+      // result.view provides access to the Vega View API
+      .then(result => console.log(result))
+      .catch(console.warn);
+  </script>
+    
+</body>
+</html> 
