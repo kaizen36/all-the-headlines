@@ -11,6 +11,8 @@ New newspapers are added by setting up the config file [config.yaml](config.yaml
 
 ### Methodology
 
+* Include countries with English is the official language according to this list [wiki](https://en.wikipedia.org/wiki/List_of_territorial_entities_where_English_is_an_official_language)
+  - prioritising countries with the largest populations
 * For each country, a quick google search on which English newspaper has the highest circulation count.
   This is usually a wikipedia result.
 * For countries where English is not the native language, this will not reflect the newspaper with
@@ -21,15 +23,18 @@ New newspapers are added by setting up the config file [config.yaml](config.yaml
 ### Current list of countries
 
 * United Kingdom
+* United States
+* Australia
+* New Zealand
+* India
+* Pakistan
+* Nigeria
+* Philippines
+* South Africa
 * Hong Kong
 * Singapore
-* ~United States~
-* Australia
-* South Africa
-* ~Nigeria~
 * Brazil
 * Russia
-* Qatar (Al-Jazeera)
 
 
 ### Scraping
