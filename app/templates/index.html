@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+
+<body>
+
+ <title>You read it here first.</title>
+ <h1>All the Headlines</h1>
+ <p>Read them here.</p>
+
+ <table style="width:100%">
+  <tr>
+    <th>Country</th>
+    <th>Headline</th>
+  </tr>
+  {% for row in data %}
+  <tr>
+    <td>{{ row["country"] }}</td>
+    <td><a href="{{ row["article_url"] }}">{{ row["text"] }}</a></td>
+  </tr>
+  {% endfor %}
+  </table> 
+
+</body>
+</html> 

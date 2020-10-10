@@ -1,0 +1,112 @@
+data:
+- country: United Kingdom
+  headline:
+    arg: h3
+    kwargs: {}
+  homepage: http://www.bbc.co.uk/news
+  link:
+    arg: a
+    kwargs: {}
+  method: requests
+  name: BBC
+- country: Singapore
+  headline:
+    arg: h3
+    kwargs: {}
+  homepage: https://www.straitstimes.com/global
+  link:
+    arg: a
+    kwargs: {}
+  method: curl
+  name: The Straits Times
+- country: Hong Kong
+  headline:
+    arg: div
+    kwargs:
+      class: article-title
+  homepage: https://www.scmp.com/
+  link:
+    arg: a
+    kwargs:
+      class: article-title__article-link article-hover-link
+  method: requests
+  name: South China Morning Post
+# - country: United States
+#   headline:
+#     arg: h3
+#     kwargs: {}
+#   homepage: https://www.nytimes.com/
+#   link:
+#     arg: a
+#     kwargs:
+#       class: css-kej3w4
+#   method: requests
+#   name: The New York Times
+- country: Australia
+  headline:
+    arg: h3
+    kwargs: {}
+  homepage: https://www.smh.com.au/
+  link:
+    arg: a
+    kwargs: {}
+  method: requests
+  name: The Sydney Morning Herald
+- country: South Africa
+  headline:
+    arg: span
+    kwargs:
+      class: article-title
+  homepage: https://www.timeslive.co.za/
+  link:
+    arg: a
+    kwargs:
+      class: image image-loader
+  method: requests
+  name: The Times
+# - country: Nigeria
+#   headline:
+#     arg: h2
+#     kwargs:
+#       class: rtp-slide-title
+#   homepage: https://www.vanguardngr.com/
+#   link:
+#     arg: a
+#     kwargs: {}
+#   method: requests
+#   name: Vanguard
+- country: Brazil
+  headline:
+    arg: h2
+    kwargs:
+      class: c-main-headline__title
+  homepage: https://www1.folha.uol.com.br/internacional/en/
+  link:
+    arg: a
+    kwargs:
+      class: c-main-headline__url
+  method: requests
+  name: Folha de S.Paulo
+- country: Russia
+  headline:
+    arg: h3
+    kwargs:
+      class: article-excerpt-lead__headline
+  homepage: https://www.themoscowtimes.com/
+  link:
+    arg: a
+    kwargs:
+      class: article-excerpt-lead__link
+  method: requests
+  name: The Moscow Times
+- country: Qatar
+  headline:
+    arg: h1
+    kwargs: {}
+  homepage: https://www.aljazeera.com/
+  link:
+    arg: a
+    kwargs:
+      class: queen-top-sec-title
+  method: requests
+  name: Al Jazeera

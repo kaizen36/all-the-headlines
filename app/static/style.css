@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Asap");
+html { 
+    font-family: Asap, sans-serif; 
+    font-color: #1b2631;
+    background: #f8f9f9; 
+    padding: 50px 50px 50px 50px; 
+}
+th, td {
+    padding: 5px 0px 5px 0px;
+}
+th {
+    text-align: left;
+}
+a {
+    color: #1b2631;
+}
