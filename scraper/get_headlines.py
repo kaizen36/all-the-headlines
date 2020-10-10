@@ -57,7 +57,15 @@ def extract_headline(
     doc = BeautifulSoup(contents, "html.parser")
 
     # get headline
-    top_headline = doc.find(headline["arg"], headline["kwargs"]).text
+    top_headline = ""
+    for h in doc.find_all(headline["arg"], headline["kwargs"]):
+        h_try = h.get_text()
+        # make sure headline has more than one word
+        if len(h_try.split()) > 1:
+            top_headline = h.get_text()
+            break
+    if not top_headline:
+        raise ValueError(f"Did not manage to find a headline for {homepage}!")
 
     # get headline url
     url = ""
@@ -143,7 +151,7 @@ def parse_args(sys_args: list) -> argparse.Namespace:
 
 def get_all_headlines(config: dict, async_request: bool = True) -> list:
     if async_request:
-        return Parallel(n_jobs=4, prefer="threads")(
+        return Parallel(n_jobs=10, prefer="threads")(
             delayed(print_headline)(c) for c in config
         )
     else:
@@ -153,7 +161,7 @@ def get_all_headlines(config: dict, async_request: bool = True) -> list:
 def main(args: argparse.Namespace) -> None:
     config = load_config(args.config)
 
-    results = get_all_headlines_async(config)
+    results = get_all_headlines(config)
 
     # filter out websites that failed to scrape
     results = [r for r in results if r]

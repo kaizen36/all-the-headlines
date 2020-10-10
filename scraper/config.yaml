@@ -9,39 +9,18 @@ data:
     kwargs: {}
   method: requests
   name: BBC
-- country: Singapore
+  
+- country: United States
   headline:
-    arg: h3
+    arg: span
     kwargs: {}
-  homepage: https://www.straitstimes.com/global
+  homepage: https://www.nytimes.com/
   link:
     arg: a
     kwargs: {}
-  method: curl
-  name: The Straits Times
-- country: Hong Kong
-  headline:
-    arg: div
-    kwargs:
-      class: article-title
-  homepage: https://www.scmp.com/
-  link:
-    arg: a
-    kwargs:
-      class: article-title__article-link article-hover-link
   method: requests
-  name: South China Morning Post
-# - country: United States
-#   headline:
-#     arg: h3
-#     kwargs: {}
-#   homepage: https://www.nytimes.com/
-#   link:
-#     arg: a
-#     kwargs:
-#       class: css-kej3w4
-#   method: requests
-#   name: The New York Times
+  name: The New York Times
+  
 - country: Australia
   headline:
     arg: h3
@@ -52,6 +31,7 @@ data:
     kwargs: {}
   method: requests
   name: The Sydney Morning Herald
+  
 - country: South Africa
   headline:
     arg: span
@@ -64,17 +44,126 @@ data:
       class: image image-loader
   method: requests
   name: The Times
-# - country: Nigeria
-#   headline:
-#     arg: h2
-#     kwargs:
-#       class: rtp-slide-title
-#   homepage: https://www.vanguardngr.com/
-#   link:
-#     arg: a
-#     kwargs: {}
-#   method: requests
-#   name: Vanguard
+  
+- country: India 
+  headline:
+    arg: div
+    kwargs: 
+        class: featured
+  homepage: https://timesofindia.indiatimes.com/
+  link:
+    arg: a
+    kwargs: {}
+  method: requests
+  name: The Times of India
+  
+- country: New Zealand
+  headline:
+    arg: h2
+    kwargs: 
+        class: story-card__heading
+  homepage: https://www.nzherald.co.nz/
+  link:
+    arg: a
+    kwargs: {}
+  method: requests
+  name: The New Zealand Herald
+  
+- country: Pakistan
+  headline:
+    arg: h2
+    kwargs: 
+        class: story__title
+  homepage: https://www.dawn.com/
+  link:
+    arg: a
+    kwargs: {}
+  method: requests
+  name: Dawn
+  
+- country: Nigeria
+  headline:
+    arg: span
+    kwargs: 
+        class: title
+  homepage: https://guardian.ng/
+  link:
+    arg: a
+    kwargs: {}
+  method: requests
+  name: Guardian Nigeria
+  
+- country: Philippines 
+  headline:
+    arg: div
+    kwargs: 
+        class: flx-m-head
+  homepage: https://www.inquirer.net/
+  link:
+    arg: a
+    kwargs: {}
+  method: curl
+  name: The Philippine Daily Inquirer
+  
+- country: Canada
+  headline:
+    arg: div
+    kwargs:
+      class: c-card__hed-text
+  homepage: https://www.theglobeandmail.com/
+  link:
+    arg: a
+    kwargs: {}
+  method: requests
+  name: The Globe and Mail
+  
+- country: Kenya
+  headline:
+    arg: h3
+    kwargs: {}
+  homepage: https://nation.africa/
+  link:
+    arg: a
+    kwargs: {}
+  method: requests
+  name: The Daily Nation
+  
+- country: Singapore
+  headline:
+    arg: h3
+    kwargs: {}
+  homepage: https://www.straitstimes.com/global
+  link:
+    arg: a
+    kwargs: {}
+  method: curl
+  name: The Straits Times
+  
+- country: Ireland
+  headline:
+    arg: span
+    kwargs: 
+        class: h2
+  homepage: https://www.irishtimes.com/
+  link:
+    arg: a
+    kwargs: {}
+  method: requests
+  name: The Irish Times
+  
+- country: Hong Kong
+  headline:
+    arg: div
+    kwargs:
+      class: article-title
+  homepage: https://www.scmp.com/
+  link:
+    arg: a
+    kwargs:
+      class: article-title__article-link article-hover-link
+  method: requests
+  name: South China Morning Post
+  
 - country: Brazil
   headline:
     arg: h2
@@ -87,6 +176,7 @@ data:
       class: c-main-headline__url
   method: requests
   name: Folha de S.Paulo
+  
 - country: Russia
   headline:
     arg: h3
@@ -99,14 +189,4 @@ data:
       class: article-excerpt-lead__link
   method: requests
   name: The Moscow Times
-- country: Qatar
-  headline:
-    arg: h1
-    kwargs: {}
-  homepage: https://www.aljazeera.com/
-  link:
-    arg: a
-    kwargs:
-      class: queen-top-sec-title
-  method: requests
-  name: Al Jazeera
+  
