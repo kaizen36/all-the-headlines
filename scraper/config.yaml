@@ -4,6 +4,7 @@ data:
     arg: h3
     kwargs: {}
   homepage: http://www.bbc.co.uk/news
+  id: 826
   link:
     arg: a
     kwargs: {}
@@ -15,6 +16,7 @@ data:
     arg: span
     kwargs: {}
   homepage: https://www.nytimes.com/
+  id: 840
   link:
     arg: a
     kwargs: {}
@@ -26,6 +28,7 @@ data:
     arg: h3
     kwargs: {}
   homepage: https://www.smh.com.au/
+  id: 36
   link:
     arg: a
     kwargs: {}
@@ -38,6 +41,7 @@ data:
     kwargs:
       class: article-title
   homepage: https://www.timeslive.co.za/
+  id: 710
   link:
     arg: a
     kwargs:
@@ -51,6 +55,7 @@ data:
     kwargs: 
         class: featured
   homepage: https://timesofindia.indiatimes.com/
+  id: 356
   link:
     arg: a
     kwargs: {}
@@ -63,6 +68,7 @@ data:
     kwargs: 
         class: story-card__heading
   homepage: https://www.nzherald.co.nz/
+  id: 554
   link:
     arg: a
     kwargs: {}
@@ -75,6 +81,7 @@ data:
     kwargs: 
         class: story__title
   homepage: https://www.dawn.com/
+  id: 586
   link:
     arg: a
     kwargs: {}
@@ -87,6 +94,7 @@ data:
     kwargs: 
         class: title
   homepage: https://guardian.ng/
+  id: 566
   link:
     arg: a
     kwargs: {}
@@ -99,6 +107,7 @@ data:
     kwargs: 
         class: flx-m-head
   homepage: https://www.inquirer.net/
+  id: 608
   link:
     arg: a
     kwargs: {}
@@ -111,6 +120,7 @@ data:
     kwargs:
       class: c-card__hed-text
   homepage: https://www.theglobeandmail.com/
+  id: 124
   link:
     arg: a
     kwargs: {}
@@ -122,6 +132,7 @@ data:
     arg: h3
     kwargs: {}
   homepage: https://nation.africa/
+  id: 404
   link:
     arg: a
     kwargs: {}
@@ -133,6 +144,7 @@ data:
     arg: h3
     kwargs: {}
   homepage: https://www.straitstimes.com/global
+  id: 702
   link:
     arg: a
     kwargs: {}
@@ -145,6 +157,7 @@ data:
     kwargs: 
         class: h2
   homepage: https://www.irishtimes.com/
+  id: 372
   link:
     arg: a
     kwargs: {}
@@ -157,6 +170,7 @@ data:
     kwargs:
       class: article-title
   homepage: https://www.scmp.com/
+  id: 344
   link:
     arg: a
     kwargs:
@@ -170,6 +184,7 @@ data:
     kwargs:
       class: c-main-headline__title
   homepage: https://www1.folha.uol.com.br/internacional/en/
+  id: 76
   link:
     arg: a
     kwargs:
@@ -183,6 +198,7 @@ data:
     kwargs:
       class: article-excerpt-lead__headline
   homepage: https://www.themoscowtimes.com/
+  id: 643
   link:
     arg: a
     kwargs:

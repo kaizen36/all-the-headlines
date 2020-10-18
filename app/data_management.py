@@ -10,11 +10,11 @@ def download_data():
     most_recent_file = sorted(file_list)[-1]
     bucket = client.bucket(bucket_name)
     blob = bucket.blob(most_recent_file)
-    blob.download_to_filename("data.csv")
+    blob.download_to_filename("static/data.csv")
 
 
 def get_data():
-    with open("data.csv") as f:
+    with open("static/data.csv") as f:
         reader = csv.DictReader(f, delimiter=",", quotechar='"')
         for row in reader:
             yield row

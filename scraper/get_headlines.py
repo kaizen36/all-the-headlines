@@ -14,7 +14,7 @@ from joblib import Parallel, delayed
 
 
 Result = namedtuple(
-    "Result", ["extract_ts", "country", "homepage", "text", "article_url"]
+    "Result", ["extract_ts", "country", "homepage", "text", "article_url", "id"]
 )
 
 
@@ -106,7 +106,7 @@ def print_headline(news_config: dict) -> (datetime.datetime, str, str):
         print(display_text(headline))
         print(f"Go to: {url}")
         print()
-    return Result(ts, news_config["country"], news_config["homepage"], headline, url)
+    return Result(ts, news_config["country"], news_config["homepage"], headline, url, news_config["id"])
 
 
 def load_config(path: str) -> dict:
